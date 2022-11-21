@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Template</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        body{
+            font-family: 'Outfit', sans-serif;
+            background-color: #d8dada;
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3%;
+        }
+        header{
+            width: 100%;
+            height: 1024px;
+            background-image: url("./images/bg.png");
+        }
+        footer{
+            background: black;
+            justify-content: center;
+            display: flex;
+        }
+        
+        @media screen and (max-width: 600px) {
+            header{
+                height: 950px;
+            }
+            #body-head {
+                width: 100% !important;
+            }
+        }
+        @media screen and (max-width: 800px) {
+            /* header{
+                height: 950px;
+            } */
+            .row{
+                display: block !important;
+                
+            }
+            .row-rev{
+                flex-flow: column-reverse;
+                display: flex !important;
+            }
+            #logos{
+                padding: 0.8rem 1rem 0rem !important;
+            }
+            #head-dec{
+                width: 80% !important;
+                padding-top: 4rem
+            }
+            #head-txt{
+                margin: 4rem 2rem 0rem !important;
+                font-size: 2rem !important;
+            }
+            #head-img {
+                margin-top: 4rem !important;
+            }
+            #body-head{
+                font-size: 2rem !important;
+            }
+            #prod-head{
+                text-align: center;
+            }
+            #prod-desc{
+                margin: auto;
+                text-align: center;
+            }
+            #banner{
+                padding-top: 2rem;
+            }
+            #body-head{
+                margin-top: 0rem !important;
+                padding-bottom: 0rem !important;
+            }
+
+        }
+
+        .row {
+        display: flex;
+        }
+
+        .column {
+        flex: 50%;
+        justify-content: center;
+        display: flex
+        }
+        #wrapper{
+            background-color: #fff5e6;
+            
+        }
+        #logos{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 0.8rem 3rem 0rem;
+        }
+        #head-img{
+            margin-top: 1rem;
+        }
+        .wt-700{
+            font-weight: 700;
+        }
+        .col-content{
+            align-items: center;
+            display: flex;
+        }
+        .align-desc-head{
+            text-align: end;
+            margin-left: auto;
+        }
+        #head-txt{
+            /* text-align: center; */
+            text-transform: uppercase;
+            color: #ffffff;
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            /* width: 54%; */
+            margin: 1rem 4rem 0rem;
+        }
+        #head-dec{
+            width: 500px;
+            text-align: center;
+            margin: auto;
+            color: #353431;
+            font-size: 19px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        #body-head{
+            text-align: center;
+            color: #d5001c;
+            text-transform: uppercase;
+            font-size: 2.3rem;
+            width: 290px;
+            margin: auto;
+            margin-top: -3rem;
+            padding-bottom: 3rem;
+        }
+        #prod-head{
+            color: #d5001c;
+            font-size: 1.8rem;
+            font-weight: 700;
+            padding-bottom: 0.4rem;
+            width: 100%;
+        }
+        #prod-desc{
+            color: #353431;
+            font-weight: 300;
+            width: 90%;
+        }
+        #location-band{
+            text-align: center;
+            text-transform: uppercase;
+            background: #d5001c;
+            color: #fff5e6;
+            font-weight: 300;
+            padding: 0.5rem 0rem;
+            margin: 0.5rem 0rem 1rem;
+        }
+        #kgc-logo{
+            justify-content: center;
+            display: flex;
+        }
+        #h-b-link{
+            color: #fff5e6;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id = "logos">
+                <img src="./images/logo.png" width="130" height="150" alt="" />
+                <img src="./images/holland-and-barrett-logo.png" width="100" alt="" />
+            </div>
+            <div id="head-txt"><div>World's No.1</div> <div><span class="wt-700">Ginseng</span> Brand in <span class="wt-700">Qatar</span></div></div>
+            <div id="head-img">
+                <img src="./images/ginseng-panax.png" alt="" width="100%" />
+            </div>
+            <div id="head-dec">
+                Korean red ginseng is a plant that grows in Asia. It's sometimes known as Asian ginseng, Chinese ginseng, or panax ginseng.
+            </div>
+        </header>
+        <body>
+                <div id="body-head">
+                    Check out our products
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img src="./images/everytime.png" alt="" height="90%" width="90%" />
+                    </div>
+                    <div class="column col-content">
+                        <div style="width: 100%;">
+                            <div id="prod-head">
+                                EVERYTIME STICKS
+                            </div>
+                            <div id="prod-desc">
+                                CheongKwanJang’s Extract Everytime comes in individually packaged sticks for easy consumption and portability. Made of 100% Korean red ginseng and purified water, it helps boost the immune system, increases stamina, and enhances physical energy.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-rev">
+                    <div class="column col-content">
+                        <div style="width: 90%;">
+                            <div id="prod-head" class="align-desc-head">
+                                GINSENG EXTRACT
+                            </div>
+                            <div id="prod-desc" class="align-desc-head">
+                                CheongKwanJang Panax Korean Red Ginseng Extract is a concentrated form of ginseng root that helps to relieve stress, improve the immune system, supports cognitive function, increases blood circulation, and increases energy.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="./images/extract.png" alt="" width="90%"  height="90%"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img src="./images/hsw.png" alt="" width="90%" height="90%"/>
+                    </div>
+                    <div class="column col-content">
+                        <div style="width: 100%;">
+                            <div id="prod-head">
+                                HONG SAM WON
+                            </div>
+                            <div id="prod-desc">
+                                Hong Sam Won is a Korean Red Ginseng drink that is made in combination with cinnamon, ginger, and Jujube fruit extract. It is a caffeine-free drink that is sure to help energize and awaken your body and mind.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-rev">
+                    <div class="column col-content">
+                        <div style="width: 90%;">
+                            <div id="prod-head" class="align-desc-head">
+                                VITAL TONIC
+                            </div>
+                            <div id="prod-desc" class="align-desc-head">
+                               Vital tonic is made from a blend of six-years-grown Korean Red Ginseng and natural herbs, vitamins, and minerals.  Vital Tonic helps to revitalize, energize, and invigorate. In essence, it brings vitality back to your life.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="./images/VITAL.png" alt="" width="90%" height="90%"/>
+                    </div>
+                </div>
+                <div id="banner">
+                    <img src="./images/banner.png" alt="" height="100%" width="100%" />
+                </div>
+                <div id="kgc-logo">
+                    <img src="./images/Global-CI.png" alt="" height="80"/>
+                </div>
+                <div id="location-band">
+                    <div ><a id="h-b-link" href="https://www.hollandandbarrett.com/">HOLLANDANDBARRETT.COM</a></div>
+                    <span>Mall Of Qatar</span> | <span>Tawar Mall</span> | <span>Porto Arabia</span>
+                </div>
+                
+        </body>
+        <footer>
+            <span><a href="https://www.instagram.com/hollandandbarrettqa/"><img src="./images/insta.png" height="70" alt="" /></a></span>
+            <span><a href="https://www.facebook.com/hollandandbarrett"><img src="./images/fb.png" height="70" alt="" /></a></span>
+            <span><a href="https://www.youtube.com/"><img src="./images/youtube.png" height="70" alt="" /></a></span>
+        </footer>
+    </div>
+</body>
+</html>
